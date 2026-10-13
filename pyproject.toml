@@ -1,0 +1,16 @@
+[project]
+name = "bigdata_tp3"
+version = "0.1.0"
+description = "Dataset generator"
+readme = "README.md"
+authors = [{ name = "gollum", email = "gollum@adaltas.com" }]
+requires-python = ">=3.13"
+dependencies = ["faker>=40.37.0"]
+
+[project.scripts]
+dataset-users = "bigdata_tp3.dataset_users:main"
+dataset-orders = "bigdata_tp3.dataset_orders:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
